@@ -1,0 +1,157 @@
+.form-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-shadow: 4px 4px 6px 2px blue;
+}
+.social-icos{
+    display: flex;
+    justify-content:center;
+}
+.fa {
+     margin: 5px 3px;
+     padding:7px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .fa:hover {
+    background-color:#245ff2;
+}
+.reg{
+    width:100%;
+    height:30px;
+    background-color:#245ff2;
+    text-align:center;
+    color:white;
+}
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+#signup-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+.remove_Book {
+    margin-left: 80%;
+    margin-top: 7px;
+    margin-bottom: 3px;
+    width: 35px;
+    border: none;
+    background-color: #3e8cff;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+  
+  
+  }
+  
+  .remove_Book a{
+    text-decoration:none;
+  }
+
+#login-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+input {
+    width: 100%;
+   
+    
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 5%;
+}
+input:focus {
+    border: 3px solid blue;
+    outline: none;
+}
+
+a {
+    text-align: right;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+
+.btn {
+    width: 100%; /* Adjust the width as needed */
+    font-size: 15px;
+    font-weight: 570;
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    height: 30px;
+}
+
+/* Additional styling for button hover */
+.btn:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 2px solid blue;
+}
+.btn.signup{
+    margin-top: 50px;
+    width:100%;
+
+}
+/* Adjustments for better responsiveness */
+@media screen and (max-width: 600px) {
+    #login-form {
+        max-width: 90%;
+    }
+    #signup-form {
+        max-width: 100%;
+    }
+}
+p {
+    margin-top: 10px;
+    text-align: center;
+    color: #555;
+}
+
+a {
+    text-align: right;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #555;
+}
+

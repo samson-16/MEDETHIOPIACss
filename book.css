@@ -1,6 +1,7 @@
 .books {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .book {
   background-color: hsl(205, 100%, 98%);
@@ -98,18 +99,24 @@
   color: white;
   border-radius: 10px;
   font-size: 20px;
-
-
 }
 
 .remove_Book a{
   text-decoration:none;
 }
 @media only screen and (max-width: 530px) {
-  .book {
-    width: 90%;
   
+  .book {
+    width:100%;
+    
   }
+  .book #fname,
+  .book #email,
+  .book #hospitals {
+    width:90%;
+    
+  }
+
   
 }
 .book-btn{
@@ -118,3 +125,4 @@
   height: 30px;
 
 }
+

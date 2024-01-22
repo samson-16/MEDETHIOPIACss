@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -159,7 +160,7 @@
               <img class="img-card" src="docimages/Doc8.jpg" alt="">
               <div class="contact_icons">
                 <div class="icons_cont"><a href="tel:   +251 958 645 848"><i class="fa-solid fa-phone"></i></a></div>
-                <div class="icons_cont"><a href="mailto:  alemayehuabera@gmail.com"></a></div>
+                <div class="icons_cont"><a href="mailto:  alemayehuabera@gmail.com"><i class="fa-regular fa-envelope"></i></a></div>
               </div>
 
             
@@ -192,7 +193,7 @@
                 <img class="img-card" src="docimages/KwonSam.jpg" alt="">
                 <div class="contact_icons">
                   <div class="icons_cont"><a href="tel:  +82 729 605 654"><i class="fa-solid fa-phone"></i></a></div>
-                  <div class="icons_cont"><a href="mailto:  kwonsam332@gmail.com"></a></div>
+                  <div class="icons_cont"><a href="mailto:  kwonsam332@gmail.com"><i class="fa-regular fa-envelope"></i></a></div>
                 </div>
   
               
@@ -211,7 +212,7 @@
                 <img class="img-card" src="docimages/Doc9.png" alt="">
                 <div class="contact_icons">
                   <div class="icons_cont"><a href="tel:    +251 945 225 852"><i class="fa-solid fa-phone"></i></a></div>
-                  <div class="icons_cont"><a href="mailto:   marugamme321@gmail.com"></a></div>
+                  <div class="icons_cont"><a href="mailto:   marugamme321@gmail.com"><i class="fa-regular fa-envelope"></i></a></div>
                 </div>
   
               
@@ -229,7 +230,7 @@
                 <img class="img-card" src="docimages/hanna tamirat.jpg" alt="">
                 <div class="contact_icons">
                   <div class="icons_cont"><a href="tel:   +251 983 563 893"><i class="fa-solid fa-phone"></i></a></div>
-                  <div class="icons_cont"><a href="mailto:    tamirathanna@gmail.com"></a></div>
+                  <div class="icons_cont"><a href="mailto:    tamirathanna@gmail.com"><i class="fa-regular fa-envelope"></i></a></div>
                 </div>
   
               
@@ -291,6 +292,41 @@
     </footer>
 
     <script src="script.js"></script>
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      
+        var vLogsElements = document.querySelectorAll(".v_logs");
+    
+        function handleScroll() {
+        
+          vLogsElements.forEach(function (element) {
+           
+            var bounding = element.getBoundingClientRect();
+            
+          
+            if (bounding.top < window.innerHeight - 100) {
+             
+              element.style.opacity = 1;
+              element.style.transform = "translateY(0)";
+            } else {
+             
+              element.style.opacity = 0;
+              element.style.transform = "translateY(20px)";
+            }
+          });
+        }
+    
+     
+        window.addEventListener("scroll", handleScroll);
+    
+        handleScroll();
+      });
+    </script>
+    
+    
+    
+    
 </body>
 
 </html>
